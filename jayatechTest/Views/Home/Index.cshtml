@@ -1,0 +1,43 @@
+﻿@model IEnumerable<jayatechTest.Models.ChatRooms>
+<h2>Welcome to Jaya Rooms Chat</h2>
+<div class="container" style="width:80%; margin-top:2%">
+    <table style="width:80%; margin:2%">
+        <tbody>
+            <tr>
+                <th>
+                    Chat Room Name
+                </th>
+                <th>
+                    Date Created
+                </th>
+                <th>
+                    Select
+                </th>
+            <tr>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.roomName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.created_at)
+                </td> 
+                <td>
+                    @using (Html.BeginForm("NickName", "Home", FormMethod.Post))
+                    {                       
+                        <input type="submit" value="Get In" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                         text-align:center; width: 100px; height:40px; padding:10px  20px 10px 20px; margin-top: 12px;
+                         border-radius: 4px; color: white" /> <br />
+                    }
+                </td>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+   
+
+
+
