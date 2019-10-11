@@ -3,14 +3,12 @@
 @{
     <h2>Before to get in JayaChat, Please write  your NickName</h2>
 
-    @using (Html.BeginForm("procesNickName", "Home", FormMethod.Post))
+    @using (Html.BeginForm("procesNickName", "Home", new { room_ID = ViewBag.room_ID }, FormMethod.Post))
     {
         <input type="hidden" name="token" id="token" value="" />
 
         <strong>@Html.Label("NickName: ")</strong>
-        @Html.TextBoxFor(model => model.NickName, new { @class = "form-control", @placeholder = "NickName", autocomplete = "off" })<br />
-        @Html.Label("Put only alpha numeric Characters and no more than fifty Characters")<br />
-
+        @Html.TextBoxFor(model => model.NickName, new { @class = "form-control", @placeholder = "Put only alpha numeric Characters and no more than fifty Characters", autocomplete = "off" })<br />     
         <input type="submit" value="Ready" class="btn-register" style="background-color:#B45F04; font-size:15px;
                          text-align:center; width: 150px; height:50px; padding:10px  20px 10px 20px; margin-top: 12px;
                          border-radius: 4px; color: white" /> <br />

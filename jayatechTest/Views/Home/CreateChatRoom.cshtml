@@ -1,0 +1,24 @@
+﻿@model jayatechTest.Models.ChatRooms
+
+<h2>You Will create a new  chat Room</h2><br />
+<p>
+    In the following form you can put the features of the new  chat room, when you have to  speak about your favorite topic.
+</p><br />
+
+<div class="container" style="width:40%; margin-top:2%">
+    @using (Html.BeginForm("createdChatRoom", "Home", FormMethod.Post))
+    {
+        @Html.Label("Put the TOPIC that you want to talk: ")
+        @Html.TextBoxFor(model => model.roomName, new { @class = "form-control", @placeholder = "Topic Room", autocomplete = "off" })<br />
+           
+
+        <input type="submit" value="Created Room" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                                text-align:center; width: 150px; height:50px; padding:10px  20px 10px 20px; margin-top: 12px;
+                                border-radius: 4px; color: white" />
+        @Html.ValidationSummary()
+    }
+</div>
+
+
+
+

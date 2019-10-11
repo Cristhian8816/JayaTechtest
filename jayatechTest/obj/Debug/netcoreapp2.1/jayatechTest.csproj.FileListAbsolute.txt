@@ -28,3 +28,5 @@ C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcor
 C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\jayatechTest.pdb
 C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\jayatechTest.csproj.CopyComplete
 C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Home\nickName.g.cshtml.cs
+C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Home\chatRoom.g.cshtml.cs
+C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Home\CreateChatRoom.g.cshtml.cs

@@ -17,7 +17,8 @@ namespace jayatechTest.Models
 
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<ChatRooms> ChatRooms { get; set; }
-        public virtual DbSet<adminAccounts> adminAccounts { get; set; }    
+        public virtual DbSet<adminAccounts> adminAccounts { get; set; }
+        public virtual DbSet<message> message { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -59,9 +60,7 @@ namespace jayatechTest.Models
 
                 entity.Property(e => e.id_Room)
                     .HasColumnName("id_Room")
-                    .ValueGeneratedNever();
-
-                entity.Property(e => e.id_User).HasColumnName("id_User");                   
+                    .ValueGeneratedNever();                               
 
                 entity.Property(e => e.roomName)
                 .HasColumnName("roomName")
@@ -94,7 +93,30 @@ namespace jayatechTest.Models
                 .HasColumnName("password")
                 .HasMaxLength(50)
                 .IsUnicode(true);
-            });                  
+            });
+
+            modelBuilder.Entity<message>(entity =>
+            {
+                entity.HasKey(e => e.id_message);
+
+                entity.ToTable("message");
+
+                entity.Property(e => e.id_message)
+                    .HasColumnName("id_message")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.id_User).HasColumnName("id_User");
+                   
+                entity.Property(e => e.id_Room).HasColumnName("id_Room");
+
+                entity.Property(e => e.messageText)
+                .HasColumnName("messageText")
+                .HasMaxLength(200);
+
+                entity.Property(e => e.msnDate)
+                    .HasColumnName("msnDate")
+                    .HasColumnType("date");
+            });
         }
     }
 }

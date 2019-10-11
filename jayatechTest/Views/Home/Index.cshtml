@@ -24,18 +24,27 @@
                     @Html.DisplayFor(modelItem => item.created_at)
                 </td> 
                 <td>
-                    @using (Html.BeginForm("NickName", "Home", FormMethod.Post))
+                    @using (Html.BeginForm("NickName", "Home", new { room_ID = item.id_Room }, FormMethod.Post))
                     {                       
                         <input type="submit" value="Get In" class="btn-register" style="background-color:#B45F04; font-size:15px;
                          text-align:center; width: 100px; height:40px; padding:10px  20px 10px 20px; margin-top: 12px;
-                         border-radius: 4px; color: white" /> <br />
+                         border-radius: 4px; color: white; align-self: center" /> <br />
                     }
                 </td>
             </tr>
             }
-            </tbody>
-        </table>
-    </div>
+        </tbody>
+    </table>
+</div>
+
+<div style="align-content:center">
+    @using (Html.BeginForm("createdChatRoom", "Home", FormMethod.Post))
+    {
+        <input type="submit" value="Created new Chat Room" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                         text-align:center; width: 250px; height:40px; padding:10px  20px 10px 20px; margin-top: 12px;
+                         border-radius: 4px; color: white; display: flow-root;" /> <br />
+    }
+</div>
 
    
 
