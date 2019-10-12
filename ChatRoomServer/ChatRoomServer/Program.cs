@@ -9,6 +9,7 @@ namespace ChatRoomServer
 {
     class Program
     {
+        //This is the server and in this main class we cofigurate all parameters to comunicate with clients
         static void Main(string[] args)
         {
             Socket listen = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);

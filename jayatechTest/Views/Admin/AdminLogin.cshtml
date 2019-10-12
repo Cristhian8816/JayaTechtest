@@ -1,0 +1,31 @@
+﻿@model jayatechTest.Models.adminAccounts
+<br /><br />
+<h2>Admin Login</h2><br />
+<p>Please insert you User Name and you Password to Login</p>
+
+<div class="container" style="width:40%; margin-top:2%">
+
+    @using (Html.BeginForm("ProcessLogin", "Admin", FormMethod.Post))
+    {
+        <input type="hidden" name="token" id="token" value="" />
+
+        <strong>@Html.Label("User: ")</strong>
+        @Html.TextBoxFor(model => model.userName, new { @class = "form-control", @placeholder = "UserName", autocomplete = "off" })<br />
+        <strong>@Html.Label("Password: ")</strong>
+        @Html.PasswordFor(model => model.password, new { @class = "form-control", @placeholder = "Password", autocomplete = "off", @value = "" })<br />
+
+        <input type="submit" value="Ingresar" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                         text-align:center; width: 150px; height:50px; padding:10px  20px 10px 20px; margin-top: 12px;
+                         border-radius: 4px; color: white" /> <br />
+        @Html.ValidationMessageFor(model => model.userName);
+    }
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+
+
+
+
+

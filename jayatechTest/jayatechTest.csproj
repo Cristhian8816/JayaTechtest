@@ -14,6 +14,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Views\Admin\historyRoom.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Admin\userHistory.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Admin\AdminControl.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Admin\AdminLogin.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
     <Content Update="Views\Home\CreateChatRoom.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>

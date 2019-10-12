@@ -18,6 +18,7 @@ namespace jayatechTest.Controllers
      
         public IActionResult Index()
         {
+            //in this accion we will expose the chatroom information for main View
             UsersContext db = new UsersContext();
 
             IEnumerable<ChatRooms> model = null;
@@ -38,19 +39,23 @@ namespace jayatechTest.Controllers
         {
             using (UsersContext db = new UsersContext())
             {
+                //here we are going to check if nickname exist in databsae
                 var nickname = db.Users.Where(n => n.NickName == model.NickName).FirstOrDefault();
                 
                 if(nickname != null)
                 {
+                    //if nickname exist, we are going to check if that nicknam is active or not
                     var userActiva = db.Users.Where(a => a.Active == nickname.Active).FirstOrDefault();                                 
 
                     if(userActiva != null)
-                    {                                          
+                    {                
+                        //here the nickname exist and is active, so you can't use the nick name written
                         ModelState.AddModelError("NickName", "This user is logged in this chat room");
                         return View("nickName");
                     }
                     else
                     {
+                        //here your nickname exist but is not active, so you can use it and we are going to created in databse
                         Users user = new Users();
                         var count_users = db.Users.Count();
                         count_users++;
@@ -76,6 +81,7 @@ namespace jayatechTest.Controllers
                 }
                 else
                 {
+                    //Here your nickname written doest'n exist and you ca use it, so we are going to cteated it in the database
                     Users user = new Users();
                     var count_users = db.Users.Count();
                     count_users++;
@@ -103,12 +109,15 @@ namespace jayatechTest.Controllers
 
         public IActionResult NickName(int room_ID)
         {
+            //we need to pass de id Room to use in others views and actions
             ViewBag.room_ID = room_ID;
             return View();
         }
 
         public IActionResult MessageSend(User_Message model, int room_ID, int user_ID)
-        {
+        { 
+            // when your nickname is available to use and you get in a sepecific chatrooom, we proceed to do the conexion beetween server and client
+            
             using (UsersContext db = new UsersContext())
             {
                 //connect();
@@ -126,6 +135,7 @@ namespace jayatechTest.Controllers
                 Users user = new Users();
                 message message = new message();
 
+                //here we are going to save the message writeen in the database
                 var count_message = db.message.Count();
                 count_message++;
 
@@ -138,6 +148,7 @@ namespace jayatechTest.Controllers
                 db.message.Add(message);
                 db.SaveChanges();
 
+                //now we are going to use viewmodel to show the message for a respective user
                 User_Message user_Message = new User_Message();
 
                 user_Message.userID = user_ID;
@@ -156,7 +167,8 @@ namespace jayatechTest.Controllers
         }
 
         public IActionResult createdChatRoom(ChatRooms model)
-        {           
+        {          
+            //This action is for created a new chatRoom en the database
             if(model.roomName != null)
             {
                 using (UsersContext db = new UsersContext())

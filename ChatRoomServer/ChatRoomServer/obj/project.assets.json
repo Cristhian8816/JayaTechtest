@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cristhian.gomez\\source\\repos\\ChatRoomServer\\ChatRoomServer\\ChatRoomServer.csproj",
+      "projectUniqueName": "C:\\Users\\cristhian.gomez\\source\\repos\\jayatechTest\\ChatRoomServer\\ChatRoomServer\\ChatRoomServer.csproj",
       "projectName": "ChatRoomServer",
-      "projectPath": "C:\\Users\\cristhian.gomez\\source\\repos\\ChatRoomServer\\ChatRoomServer\\ChatRoomServer.csproj",
+      "projectPath": "C:\\Users\\cristhian.gomez\\source\\repos\\jayatechTest\\ChatRoomServer\\ChatRoomServer\\ChatRoomServer.csproj",
       "packagesPath": "C:\\Users\\cristhian.gomez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cristhian.gomez\\source\\repos\\ChatRoomServer\\ChatRoomServer\\obj\\",
+      "outputPath": "C:\\Users\\cristhian.gomez\\source\\repos\\jayatechTest\\ChatRoomServer\\ChatRoomServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

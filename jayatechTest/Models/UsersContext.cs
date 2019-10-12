@@ -24,11 +24,8 @@ namespace jayatechTest.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
-            {
-                //optionsBuilder.UseSqlServer("Data Source=MVMOAN175A\\SQLEXPRESS;Initial Catalog=Sarepta_Consultory;User ID=sa;Password=sa");
+            {               
                 optionsBuilder.UseSqlServer("Data Source = MVMOAN175A\\SQLEXPRESS; Initial Catalog = Jaya_Chat; Integrated Security = True");
-
-
             }
         }
 

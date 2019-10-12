@@ -1,0 +1,61 @@
+﻿@model IEnumerable<jayatechTest.Models.Rooms_Message>
+
+
+<h2>Message History</h2>
+
+<div class="container" style="width:80%; margin-top:2%">
+    <table style="width:80%; margin:2%">
+        <tbody>
+            <tr>
+                <th>
+                    Room Name
+                </th>
+                <th>
+                    NickName
+                </th>
+                <th>
+                    Message
+                </th>
+                <th>
+                    Date
+                </th>
+<tr>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ChatRoomName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.messageText)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateMessage)
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container" style="width:40%; margin-top:2%">
+        @using (Html.BeginForm("AdminLogin", "Admin", FormMethod.Post))
+        {
+            <input type="submit" value="back to Admin Control" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                         text-align:center; width: 250px; height:50px; padding:10px  20px 10px 20px; margin-top: 12px;
+                         border-radius: 4px; color: white" />
+            @Html.ValidationSummary()
+        }
+    </div>
+
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+
+
+
+
+
+
+

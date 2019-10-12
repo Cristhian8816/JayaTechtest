@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<jayatechTest.Models.ChatRooms>
+
 <h2>Welcome to Jaya Rooms Chat</h2>
 <div class="container" style="width:80%; margin-top:2%">
     <table style="width:80%; margin:2%">
@@ -14,39 +15,39 @@
                     Select
                 </th>
             <tr>
-            @foreach (var item in Model)
-            {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.roomName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.created_at)
-                </td> 
-                <td>
-                    @using (Html.BeginForm("NickName", "Home", new { room_ID = item.id_Room }, FormMethod.Post))
-                    {                       
-                        <input type="submit" value="Get In" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.roomName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.created_at)
+                    </td>
+                    <td>
+                        @using (Html.BeginForm("NickName", "Home", new { room_ID = item.id_Room }, FormMethod.Post))
+                        {
+                            <input type="submit" value="Get In" class="btn-register" style="background-color:#B45F04; font-size:15px;
                          text-align:center; width: 100px; height:40px; padding:10px  20px 10px 20px; margin-top: 12px;
                          border-radius: 4px; color: white; align-self: center" /> <br />
-                    }
-                </td>
-            </tr>
+                        }
+                    </td>
+                </tr>
             }
-        </tbody>
-    </table>
-</div>
+            </tbody>
+        </table>
+    </div>
 
-<div style="align-content:center">
-    @using (Html.BeginForm("createdChatRoom", "Home", FormMethod.Post))
-    {
-        <input type="submit" value="Created new Chat Room" class="btn-register" style="background-color:#B45F04; font-size:15px;
+    <div style="align-content:center">
+        @using (Html.BeginForm("createdChatRoom", "Home", FormMethod.Post))
+        {
+            <input type="submit" value="Created new Chat Room" class="btn-register" style="background-color:#B45F04; font-size:15px;
                          text-align:center; width: 250px; height:40px; padding:10px  20px 10px 20px; margin-top: 12px;
                          border-radius: 4px; color: white; display: flow-root;" /> <br />
-    }
-</div>
+        }
+    </div>
 
-   
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 
 
 

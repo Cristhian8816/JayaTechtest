@@ -30,3 +30,7 @@ C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcor
 C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Home\nickName.g.cshtml.cs
 C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Home\chatRoom.g.cshtml.cs
 C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Home\CreateChatRoom.g.cshtml.cs
+C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AdminLogin.g.cshtml.cs
+C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AdminControl.g.cshtml.cs
+C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Admin\userHistory.g.cshtml.cs
+C:\Users\cristhian.gomez\source\repos\jayatechTest\jayatechTest\obj\Debug\netcoreapp2.1\Razor\Views\Admin\historyRoom.g.cshtml.cs

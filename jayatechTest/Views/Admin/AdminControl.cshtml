@@ -1,0 +1,45 @@
+﻿@model jayatechTest.Models.User_Message
+<br /><br />
+<h2>Admin Login</h2><br />
+<p>here you can control de history of message of users and chat rooms</p>
+
+
+<div class="container" style="width:40%; margin-top:2%">
+
+@using (Html.BeginForm("userHistory", "Admin", FormMethod.Post))
+{
+    <input type="hidden" name="token" id="token" value="" />
+
+    @Html.Label("List Users:")
+    @Html.DropDownListFor(model => model.NickName, new SelectList(Model.nicknames), "Select User", new { @class = "form-control", @placeholder = "Select user" })
+
+    <input type="submit" value="Consult history" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                        text-align:center; width: 150px; height:50px; padding:10px  20px 10px 20px; margin-top: 12px;
+                        border-radius: 4px; color: white" /> <br />
+}
+
+</div>
+
+<div class="container" style="width:40%; margin-top:2%">
+
+    @using (Html.BeginForm("historyRoom", "Admin", FormMethod.Post))
+    {
+        <input type="hidden" name="token" id="token" value="" />
+
+        @Html.Label("List Users:")
+        @Html.DropDownListFor(model => model.roomName, new SelectList(Model.Rooms), "Select Chat Room", new { @class = "form-control", @placeholder = "Select user" })
+
+        <input type="submit" value="Consult history" class="btn-register" style="background-color:#B45F04; font-size:15px;
+                        text-align:center; width: 150px; height:50px; padding:10px  20px 10px 20px; margin-top: 12px;
+                        border-radius: 4px; color: white" /> <br />
+    }
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/hmac-sha256.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+
+
+
+
+

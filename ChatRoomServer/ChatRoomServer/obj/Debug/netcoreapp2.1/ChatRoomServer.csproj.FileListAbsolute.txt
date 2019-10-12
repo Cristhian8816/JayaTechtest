@@ -9,3 +9,14 @@ C:\Users\cristhian.gomez\source\repos\ChatRoomServer\ChatRoomServer\obj\Debug\ne
 C:\Users\cristhian.gomez\source\repos\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.AssemblyInfo.cs
 C:\Users\cristhian.gomez\source\repos\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.dll
 C:\Users\cristhian.gomez\source\repos\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.pdb
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\bin\Debug\netcoreapp2.1\ChatRoomServer.deps.json
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\bin\Debug\netcoreapp2.1\ChatRoomServer.runtimeconfig.json
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\bin\Debug\netcoreapp2.1\ChatRoomServer.runtimeconfig.dev.json
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\bin\Debug\netcoreapp2.1\ChatRoomServer.dll
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\bin\Debug\netcoreapp2.1\ChatRoomServer.pdb
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.csprojAssemblyReference.cache
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.csproj.CoreCompileInputs.cache
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.AssemblyInfoInputs.cache
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.AssemblyInfo.cs
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.dll
+C:\Users\cristhian.gomez\source\repos\jayatechTest\ChatRoomServer\ChatRoomServer\obj\Debug\netcoreapp2.1\ChatRoomServer.pdb
